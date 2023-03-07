@@ -1,0 +1,65 @@
+-
+  request:  # 请求
+    url: https://b2b2c-multishop-test.mall4j.com/apis/prod/prod  # 请求的路径
+    headers:      # 请求头
+      authorization: q6+QQi8CFWh7j0VqV5u8MGmek1PyjnI/6ybn0fF4s8DkBz4ZNb3ZB44Ya6kagPA7
+    json:       # 请求参数
+      t: 1678156293844
+      prodType: 0
+      mold: 0
+      video: ''
+      pic: 2022/11/31f25bf218a04e73bad7f8370ba2e4ee.jpg
+      imgs: 2022/11/31f25bf218a04e73bad7f8370ba2e4ee.jpg
+      isCompose: 0
+      preSellStatus: 0
+      preSellTime: null
+      categoryId: 371
+      shopCategoryId: 372
+      brandId: 0
+      skuList:
+        - price: '100'
+          oriPrice: '100'
+          stocks: 100
+          properties: ''
+          skuName: ''
+          partyCode: ''
+          weight: 0
+          volume: 0
+          status: 1
+          stockWarning: 0
+          changeStock: null
+          skuLangList:
+            - lang: 0
+              prodName: 大头兔子
+              properties: ''
+              skuId: 0
+              skuName: ''
+      prodLangList:
+        - langName: 中文
+          brief: ''
+          content: ''
+          lang: 0
+          prodName: 大头兔子
+      brandName: ''
+      deliveryAmount: null
+      deliveryTemplateId: 0
+      totalStocks: 100
+      useLang: 0
+      tableRate: 0
+      seq: 0
+      virtualRemark: null
+      writeOffNum: null
+      writeOffTime: null
+      writeOffMultipleCount: -1
+      writeOffStart: null
+      writeOffEnd: null
+      isRefund: null
+      prodParameterList: [ ]
+      price: 100
+      oriPrice: 100
+      content: null
+      prodName: 大头兔子
+      deliveryModeVo:
+        hasShopDelivery: true
+        hasUserPickUp: false
+        hasCityDelivery: false

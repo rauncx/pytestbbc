@@ -1,0 +1,7 @@
+-
+  url: https://pc-test.mall4j.com/login
+  data:
+    username: 18144632758
+    password: lh123456
+    usernamexpath: //*[@id="__layout"]/div/div/div/div[2]/div/div/div[2]/div[1]/input
+    passwordxpath: //*[@id="__layout"]/div/div/div/div[2]/div/div/div[2]/div[3]/input

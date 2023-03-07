@@ -1,0 +1,12 @@
+-
+  request:
+    url: https://b2b2c-api-test.mall4j.com/p/shopCart/changeItem
+    headers: # 请求头
+      authorization: /KwtekGNFLQKwOchbi74k+cKITAoO7r/0ICSjl+S+OAwW7zXOUkgAuS980yqn1oy
+    params:
+      basketId: 0
+      count: 1
+      prodId: 3933
+      shopId: 106
+      skuId: 7007
+      distributionCardNo: ''
