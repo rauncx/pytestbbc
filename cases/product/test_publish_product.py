@@ -1,15 +1,14 @@
-import json
 import os
 import pytest
 import requests
 
-from lib.yaml_util import YamlUtil
+from utils.yaml_util import YamlUtil
 
 
 class TestPublishProduct():
     # 这样获取不到yaml文件的路径
     # @pytest.mark.parametrize('args', YamlUtil('test_api.yaml').read_yaml())
-    @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/lib/product/PublishProduct.yaml').read_yaml())
+    @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/config/product/PublishProduct.yaml').read_yaml())
     def test_publish_product(self, args):
         # 路径，获取yaml配置文件中设置的url
         url = args['request']['url']

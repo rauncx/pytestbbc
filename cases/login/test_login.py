@@ -2,11 +2,11 @@ import os
 import pytest
 from selenium import webdriver
 
-from lib.yaml_util import YamlUtil
+from utils.yaml_util import YamlUtil
 
 
 class TestLogin:
-    @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/lib/login/login.yaml').read_yaml())
+    @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/config/login/login.yaml').read_yaml())
     def test_login(self, args):
         # 浏览器驱动
         driver = webdriver.Chrome(r'D:\chromedriver\chromedriver.exe')

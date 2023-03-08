@@ -1,15 +1,14 @@
-import json
 import os
 import pytest
 import requests
 
-from lib.yaml_util import YamlUtil
+from utils.yaml_util import YamlUtil
 
 
 class TestAddCart():
 
     # # 获取商品详情
-    # @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/lib/product/addcart.yaml').read_yaml())
+    # @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/config/product/addcart.yaml').read_yaml())
     # def test_product_details(self, args):
     #     # 路径，获取yaml配置文件中设置的url
     #     url = args['request']['url']
@@ -30,7 +29,7 @@ class TestAddCart():
     #     return prodId, shopid, skuid
 
     # 将商品加入购物车
-    @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/lib/product/addcart.yaml').read_yaml())
+    @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/config/product/addcart.yaml').read_yaml())
     def test_add_cart(self, args):
         # 路径，获取yaml配置文件中设置的url
         url = args['request']['url']
