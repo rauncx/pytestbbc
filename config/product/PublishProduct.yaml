@@ -1,8 +1,6 @@
 -
   request:  # 请求
     url: https://b2b2c-multishop-test.mall4j.com/apis/prod/prod  # 请求的路径
-    headers:      # 请求头
-      authorization: q6+QQi8CFWh7j0VqV5u8MGmek1PyjnI/6ybn0fF4s8DkBz4ZNb3ZB44Ya6kagPA7
     json:       # 请求参数
       t: 1678156293844
       prodType: 0

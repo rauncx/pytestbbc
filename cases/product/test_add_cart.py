@@ -30,15 +30,13 @@ class TestAddCart():
 
     # 将商品加入购物车
     @pytest.mark.parametrize('args', YamlUtil(os.getcwd()+'/config/product/addcart.yaml').read_yaml())
-    def test_add_cart(self, args):
+    def test_add_cart(self, args, user_token):
         # 路径，获取yaml配置文件中设置的url
         url = args['request']['url']
-        print(url)
         # 需要传入的数据,获取yaml配置文件中设置的参数
         params = args['request']['params']
-        print(params)
-        headers = args['request']['headers']
-        print(headers)
+        # headers = args['request']['headers']
+        headers = user_token
         # 发送post请求
         res = requests.post(url, json=params, headers=headers)
         print(res.text)
